@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="dist_ddrmem_ip_synth_1" LaunchDir="D:/VivadoProject/ddr_new/ddr_new.runs/dist_ddrmem_ip_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="dist_dmem_ip_synth_1" LaunchDir="D:/VivadoProject/ddr_new/ddr_new.runs/dist_dmem_ip_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

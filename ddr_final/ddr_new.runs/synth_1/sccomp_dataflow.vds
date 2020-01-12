@@ -1,0 +1,146 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Dec 15 20:15:08 2019
+# Process ID: 14652
+# Current directory: D:/Desktop/ddr_new/ddr_new.runs/synth_1
+# Command line: vivado.exe -log sccomp_dataflow.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sccomp_dataflow.tcl
+# Log file: D:/Desktop/ddr_new/ddr_new.runs/synth_1/sccomp_dataflow.vds
+# Journal file: D:/Desktop/ddr_new/ddr_new.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-1460] Use of init.tcl in F:/Xilinx/Vivado/2018.3/scripts/init.tcl is deprecated. Please use Vivado_init.tcl 
+Sourcing tcl script 'F:/Xilinx/Vivado/2018.3/scripts/init.tcl'
+source sccomp_dataflow.tcl -notrace
+Command: synth_design -top sccomp_dataflow -part xc7a100tcsg324-1
+Starting synth_design
+WARNING: [Vivado_Tcl 4-391] The following IPs are missing output products for Synthesis target. These output products could be required for synthesis, please generate the output products using the generate_target or synth_ip command before running synth_design.
+D:/Desktop/ddr_new/ddr_new.srcs/sources_1/ip/ddr2_ram/ddr2_ram.xci
+D:/Desktop/ddr_new/ddr_new.srcs/sources_1/ip/dist_sdmem_ip/dist_sdmem_ip.xci
+
+WARNING: [Vivado_Tcl 4-391] The following IPs are missing output products for Implementation target. These output products could be required for synthesis, please generate the output products using the generate_target or synth_ip command before running synth_design.
+D:/Desktop/ddr_new/ddr_new.srcs/sources_1/ip/ddr2_ram/ddr2_ram.xci
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13008 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 418.582 ; gain = 94.680
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sccomp_dataflow' [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/sccomp_dataflow.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Databus' [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/DataBus.v:34]
+	Parameter BLOCK_SIZE bound to: 128 - type: integer 
+	Parameter DDR_BLOCK_IN_USE bound to: 16 - type: integer 
+	Parameter WAIT_IDEL_LOOP_AFTER_BOOTDONE bound to: 256 - type: integer 
+	Parameter DDR_TO_IMEM_FIRSTCELL_INSISTLOOP bound to: 256 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/DataBus.v:105]
+WARNING: [Synth 8-6014] Unused sequential element is_first_to_ddr_count_reg was removed.  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/DataBus.v:96]
+WARNING: [Synth 8-6014] Unused sequential element bootdone_idle_count_reg was removed.  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/DataBus.v:98]
+WARNING: [Synth 8-5788] Register ddr_read_write_reg in module Databus is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/DataBus.v:192]
+WARNING: [Synth 8-3848] Net sd_mem_data_toSDMEM in module/entity Databus does not have driver. [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/DataBus.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'Databus' (1#1) [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/DataBus.v:34]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [D:/Desktop/ddr_new/ddr_new.runs/synth_1/.Xil/Vivado-14652-DESKTOP-U8GI32S/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (2#1) [D:/Desktop/ddr_new/ddr_new.runs/synth_1/.Xil/Vivado-14652-DESKTOP-U8GI32S/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'static_cpu' [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:1]
+WARNING: [Synth 8-151] case item 3'b101 is unreachable [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:364]
+INFO: [Synth 8-226] default block is never used [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:358]
+INFO: [Synth 8-226] default block is never used [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:381]
+INFO: [Synth 8-226] default block is never used [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:397]
+INFO: [Synth 8-6157] synthesizing module 'CONTROL' [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/CONTROL.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CONTROL' (3#1) [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/CONTROL.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (4#1) [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'CLZ' [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/CLZ.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'CLZ' (5#1) [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/CLZ.v:24]
+INFO: [Synth 8-6157] synthesizing module 'CP0' [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/CP0.v:23]
+WARNING: [Synth 8-3848] Net timer_int in module/entity CP0 does not have driver. [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/CP0.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'CP0' (6#1) [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/CP0.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Regfiles' [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/regfiles.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Regfiles' (7#1) [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/regfiles.v:2]
+INFO: [Synth 8-6157] synthesizing module 'DIV' [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/DIV.v:24]
+WARNING: [Synth 8-5788] Register r_reg_reg in module DIV is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/DIV.v:41]
+WARNING: [Synth 8-5788] Register sign_r_reg in module DIV is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/DIV.v:41]
+WARNING: [Synth 8-5788] Register q_reg_reg in module DIV is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/DIV.v:45]
+WARNING: [Synth 8-5788] Register r_reg in module DIV is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/DIV.v:70]
+WARNING: [Synth 8-5788] Register b_reg_reg in module DIV is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/DIV.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'DIV' (8#1) [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/DIV.v:24]
+INFO: [Synth 8-6157] synthesizing module 'DIVU' [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/DIVU.v:2]
+WARNING: [Synth 8-5788] Register q_reg_reg in module DIVU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/DIVU.v:21]
+WARNING: [Synth 8-5788] Register sign_r_reg in module DIVU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/DIVU.v:19]
+WARNING: [Synth 8-5788] Register b_reg_reg in module DIVU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/DIVU.v:19]
+WARNING: [Synth 8-5788] Register r_reg_reg in module DIVU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/DIVU.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'DIVU' (9#1) [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/DIVU.v:2]
+WARNING: [Synth 8-6014] Unused sequential element HI_reg was removed.  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:318]
+WARNING: [Synth 8-6014] Unused sequential element hi_wdata_mem_reg was removed.  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:538]
+WARNING: [Synth 8-6014] Unused sequential element lo_wdata_mem_reg was removed.  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:539]
+WARNING: [Synth 8-6014] Unused sequential element HI_mem_reg was removed.  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:551]
+WARNING: [Synth 8-6014] Unused sequential element mem_multu_reg was removed.  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:553]
+WARNING: [Synth 8-6014] Unused sequential element mult_mem_reg was removed.  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:554]
+WARNING: [Synth 8-6014] Unused sequential element pc_wb_reg was removed.  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:588]
+WARNING: [Synth 8-6014] Unused sequential element hi_wdata_wb_reg was removed.  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:589]
+WARNING: [Synth 8-6014] Unused sequential element lo_wdata_wb_reg was removed.  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:590]
+WARNING: [Synth 8-6014] Unused sequential element wb_HI_reg was removed.  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:591]
+WARNING: [Synth 8-6014] Unused sequential element wb_LO_reg was removed.  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:592]
+WARNING: [Synth 8-6014] Unused sequential element DM_W_wb_reg was removed.  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:593]
+WARNING: [Synth 8-6014] Unused sequential element hi_wdata_ex_reg was removed.  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:614]
+WARNING: [Synth 8-6014] Unused sequential element lo_wdata_ex_reg was removed.  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:615]
+WARNING: [Synth 8-6014] Unused sequential element ex_clz_reg was removed.  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:620]
+WARNING: [Synth 8-6014] Unused sequential element ex_HI_reg was removed.  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:682]
+WARNING: [Synth 8-5788] Register wa_regflddr_mem_reg in module static_cpu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:500]
+WARNING: [Synth 8-5788] Register wa_regflddr_wb_reg in module static_cpu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:488]
+WARNING: [Synth 8-5788] Register _aluc_ex_reg in module static_cpu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:517]
+WARNING: [Synth 8-5788] Register ex_alu_a_reg in module static_cpu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:517]
+WARNING: [Synth 8-5788] Register RMemMode_ex_reg in module static_cpu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:657]
+WARNING: [Synth 8-5788] Register ex_WMemMode_reg in module static_cpu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:658]
+WARNING: [Synth 8-5788] Register ex_sign_lblh_reg in module static_cpu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:667]
+WARNING: [Synth 8-5788] Register ex_rf_rdata1_reg in module static_cpu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:245]
+WARNING: [Synth 8-5788] Register wa_regflddr_ex_reg in module static_cpu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:677]
+WARNING: [Synth 8-5788] Register ex_LO_reg in module static_cpu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:683]
+WARNING: [Synth 8-5788] Register ex_alu_b_reg in module static_cpu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:517]
+WARNING: [Synth 8-3848] Net mult_z in module/entity static_cpu does not have driver. [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:264]
+INFO: [Synth 8-6155] done synthesizing module 'static_cpu' (10#1) [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/static_cpu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ddrmem_controller' [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/ddrmem_controller.v:11]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_WRITE_WAIT bound to: 1 - type: integer 
+	Parameter S_WRITE_PRE bound to: 2 - type: integer 
+	Parameter S_WRITE bound to: 3 - type: integer 
+	Parameter S_WAIT bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sealedDDR' [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/sealedDDR.v:10]
+	Parameter readInsistLoop bound to: 256 - type: integer 
+	Parameter writeInsistLoop bound to: 256 - type: integer 
+	Parameter ddr_startLoop bound to: 256 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/Desktop/ddr_new/ddr_new.runs/synth_1/.Xil/Vivado-14652-DESKTOP-U8GI32S/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (11#1) [D:/Desktop/ddr_new/ddr_new.runs/synth_1/.Xil/Vivado-14652-DESKTOP-U8GI32S/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'clk_divider' of module 'clk_wiz_0' requires 4 connections, but only 2 given [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/sealedDDR.v:56]
+INFO: [Synth 8-6157] synthesizing module 'ddr2_write_read' [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/ddr2_write_read.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ddr2_write_control' [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/ddr2_write_control.v:4]
+	Parameter DQ_WIDTH bound to: 16 - type: integer 
+	Parameter ECC_TEST bound to: OFF - type: string 
+	Parameter ADDR_WIDTH bound to: 27 - type: integer 
+	Parameter nCK_PER_CLK bound to: 4 - type: integer 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter PAYLOAD_WIDTH bound to: 16 - type: integer 
+	Parameter APP_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter APP_MASK_WIDTH bound to: 16 - type: integer 
+	Parameter S_IDLE bound to: 3'b001 
+	Parameter S_WRITE bound to: 3'b010 
+INFO: [Synth 8-6155] done synthesizing module 'ddr2_write_control' (12#1) [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/ddr2_write_control.v:4]
+INFO: [Synth 8-6157] synthesizing module 'ddr2_read_control' [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/ddr2_read_control.v:3]
+	Parameter S_IDLE bound to: 5'b00001 
+	Parameter S_READ bound to: 5'b00010 
+INFO: [Synth 8-6155] done synthesizing module 'ddr2_read_control' (13#1) [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/ddr2_read_control.v:3]
+ERROR: [Synth 8-439] module 'ddr2_ram' not found [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/ddr2_write_read.v:120]
+ERROR: [Synth 8-6156] failed synthesizing module 'ddr2_write_read' [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/ddr2_write_read.v:3]
+ERROR: [Synth 8-6156] failed synthesizing module 'sealedDDR' [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/sealedDDR.v:10]
+ERROR: [Synth 8-6156] failed synthesizing module 'ddrmem_controller' [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/ddrmem_controller.v:11]
+ERROR: [Synth 8-6156] failed synthesizing module 'sccomp_dataflow' [D:/Desktop/ddr_new/ddr_new.srcs/sources_1/new/sccomp_dataflow.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 482.246 ; gain = 158.344
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 46 Warnings, 0 Critical Warnings and 6 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 15 20:15:18 2019...

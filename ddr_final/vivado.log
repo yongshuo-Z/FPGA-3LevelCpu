@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Dec 15 20:26:52 2019
+# Process ID: 11920
+# Current directory: D:/VivadoProject/ddr_final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7576 D:\VivadoProject\ddr_final\ddr_new.xpr
+# Log file: D:/VivadoProject/ddr_final/vivado.log
+# Journal file: D:/VivadoProject/ddr_final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/VivadoProject/ddr_final/ddr_new.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Desktop/ddr_new' since last save.
+Scanning sources...
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source D:/VivadoProject/ddr_final/ddr_new.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 15 20:27:13 2019...
+ERROR: [Common 17-70] Application Exception: SrcMgr::createSS : type not set
+open_project D:/VivadoProject/ddr_final/ddr_new.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Desktop/ddr_new' since last save.
+Scanning sources...
+ERROR: [Common 17-70] Application Exception: SrcMgr::createSS : type not set
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 15 20:36:56 2019...
